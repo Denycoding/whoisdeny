@@ -1,2 +1,2 @@
-# whoisdeny
-My own social page
+# My-own-social-page
+social pages
