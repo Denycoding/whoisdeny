@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denyweb - instagram - github - twitter</title>
+    <title>Inspirecoding - instagram - github - twitter</title>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -17,10 +17,10 @@
             </div>
             <div class="title">
                 <h1>
-                    @denyweb
+                    @inspirecoding
                 </h1>
                 <p>
-                    Frontend developer <br> co-founder <a target="_blank" href="http://richrestore.com/">richrestore</a> and <a target="_blank" href="https://cvndleshop.net/">cvndleshop</a>
+                    Frontend developer <br> co-founder <a target="_blank" href="http://richrestore.com/">richrestore</a> and <a target="_blank" href="https://cvndleshop.com/">cvndleshop</a>
                 </p>
             </div>
         </div>
@@ -40,7 +40,7 @@
                         Instagram
                     </span>
                 </a>
-                <a target="_blank" href="https://codepen.io/collection/DOaOeg">
+                <a target="_blank" href="https://codepen.io/inspirecoding">
                     <i class='bx bxl-codepen' ></i>
                     <span>
                         Codepen
@@ -64,19 +64,13 @@
                         Lusaxweb
                     </span>
                 </a>
-                <a target="_blank" href="https://www.patreon.com/luisdanielroviracontreras">
-                    <i class='bx bxl-patreon'></i>
-                    <span>
-                        Patreon
-                    </span>
-                </a>
-                <a target="_blank" href="https://github.com/luisDanielRoviraContreras">
+                <a target="_blank" href="https://github.com/Denycoding">
                     <i class='bx bxl-github'></i>
                     <span>
                         Github
                     </span>
                 </a>
-                <a target="_blank" href="https://twitter.com/luisdfly">
+                <a target="_blank" href="https://twitter.com/Inspirecoding">
                     <i class='bx bxl-twitter' ></i>
                     <span>
                         Twitter
@@ -91,7 +85,8 @@
             </div>
 
             <div class="con-posts">
-                <a class="post" target="_blank" href="https://www.instagram.com/p/CECec3CidsL/">
+            <div id="instafeed"></div>
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CConbmSloFj/">
                     <div class="con-file">
                         <video autoplay loop src="guide.mp4"></video>
                     </div>
@@ -102,13 +97,13 @@
                             Instagram
                         </h3>
                         <p>
-                            Guide to become a frontend developer
+                            Так создаётся контент
                         </p>
                     </footer>
 
                     <div class="effect"></div>
                 </a>
-                <a class="post" target="_blank" href="https://www.instagram.com/p/CEAUoY-CKCH/">
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CAu_vK0FEaV/">
                     <div class="con-file">
                         <img src="login.png" alt="">
                     </div>
@@ -119,13 +114,13 @@
                             Instagram
                         </h3>
                         <p>
-                            How to create login page
+                            Выглядит максимально круто!
                         </p>
                     </footer>
 
                     <div class="effect"></div>
                 </a>
-                <a class="post" target="_blank" href="https://www.instagram.com/p/CD7kxchi0mj/">
+                <a class="post" target="_blank" href="https://www.instagram.com/p/CATCEZVgUPF/">
                     <div class="con-file">
                         <img src="links.png" alt="">
                     </div>
@@ -136,7 +131,7 @@
                             Instagram
                         </h3>
                         <p>
-                            How to create links page
+                            Минимализм для геймеров
                         </p>
                     </footer>
 
@@ -264,6 +259,25 @@
             </div>
         </div>
     </div>
-</body>
+
 <script src="scripts/script.js"></script>
+<script src=""></script>
+<script>
+    (function(){
+        new InstagramFeed({
+            'username': 'inspirecoding',
+            'container': "#instafeed",
+            'display_profile': true,
+            'display_biography': true,
+            'display_gallery': true,
+            'callback': null,
+            'styling': true,
+            'items': 8,
+            'items_per_row': 4,
+            'margin': 1
+        });
+    })();
+</script>
+</body>
+
 </html>
